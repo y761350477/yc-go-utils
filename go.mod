@@ -1,4 +1,4 @@
-module github.com/y761350477/yc-go-utils
+module yc-go-utils
 
 go 1.14
 
