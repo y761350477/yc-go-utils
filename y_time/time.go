@@ -25,6 +25,14 @@ func NowTime() (str_ string) {
 	return str_
 }
 
+// 求时间差
+func TimeDiff(f func()) time.Duration {
+	startTime := time.Now()
+	f()
+	endTime := time.Now()
+	return endTime.Sub(startTime)
+}
+
 // 指定睡眠时间
 func SleepSecond(i int) {
 	time.Sleep(time.Second * time.Duration(i))
